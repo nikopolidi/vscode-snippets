@@ -1,0 +1,139 @@
+{
+  "console.log": {
+    "scope": "javascript,typescript,javascriptreact,jsx,tsx,typescriptreact",
+    "prefix": "cl",
+    "body": [
+      "console.log('$1'$2)"
+    ],
+    "description": "Log to console"
+  },
+  "console.log two attributes": {
+    "scope": "javascript,typescript,javascriptreact,jsx,tsx,typescriptreact",
+    "prefix": "cl,",
+    "body": [
+      "console.log('$1:', $1)"
+    ],
+    "description": "Log variable name and value to console"
+  },
+  "const async function": {
+    "scope": "javascript,typescript,javascriptreact,jsx,tsx,typescriptreact",
+    "prefix": "caf",
+    "body": [
+      "const $1 = async ($2)=>{",
+      "\t$3",
+      "}"
+    ]
+  },
+  "setloading": {
+    "scope": "javascript,typescript,javascriptreact,jsx,tsx,typescriptreact",
+    "prefix": "sl",
+    "body": [
+      "setState({",
+      "\t...state,",
+      "\tloading: ${1:true}",
+      "})"
+    ]
+  },
+  "console.error": {
+    "scope": "javascript,typescript,javascriptreact,jsx,tsx,typescriptreact",
+    "prefix": "ce",
+    "body": [
+      "console.error('${1:error:}', ${2:err});"
+    ],
+    "description": "Log error to console"
+  },
+  "try catch": {
+    "scope": "javascript,typescript,javascriptreact,jsx,tsx,typescriptreact",
+    "prefix": "try",
+    "body": [
+      "try {",
+      "\t$1",
+      "} catch (err) {",
+      "\t",
+      "}"
+    ],
+    "description": "Try catch block"
+  },
+  "async function": {
+    "scope": "javascript,typescript,javascriptreact,jsx,tsx,typescriptreact",
+    "prefix": "af",
+    "body": [
+      "async function $1 ($2){",
+      "\t$3",
+      "}"
+    ],
+    "description": "Async function"
+  },
+  "label/value object": {
+    "scope": "javascript,typescript,javascriptreact,jsx,tsx,typescriptreact",
+    "prefix": "lv",
+    "body": [
+      "{",
+      "\tlabel:\"$1\",",
+      "\tvalue: \"$2\",",
+      "},"
+    ],
+    "description": "label,value object"
+  },
+  "setState": {
+    "scope": "javascript,typescript,javascriptreact,jsx,tsx,typescriptreact",
+    "prefix": "ss",
+    "body": [
+      "setState({",
+      "\t...state,",
+      "\t$1",
+      "})"
+    ]
+  },
+  "this.setState": {
+    "scope": "javascript,typescript,javascriptreact,jsx,tsx,typescriptreact",
+    "prefix": "tss",
+    "body": [
+      "this.setState({",
+      "\t$1",
+      "})"
+    ]
+  },
+  "useState": {
+    "scope": "javascript,typescript,javascriptreact,jsx,tsx,typescriptreact",
+    "prefix": "us",
+    "body": [
+      "const [$1, set$1] = useState($2);\n",
+    ],
+    "description": "React useState hook"
+  },
+  "export from": {
+    "scope": "javascript,typescript,javascriptreact,jsx,tsx,typescriptreact",
+    "prefix": "edf",
+    "body": [
+      "export {default} from './$1';\n"
+    ],
+    "description": "Export Default From"
+  },
+  "useEffect": {
+    "scope": "javascript,typescript,javascriptreact,jsx,tsx,typescriptreact",
+    "prefix": "uf",
+    "body": [
+      "useEffect(() => {",
+      "\t$2",
+      "}, [$1]);"
+    ],
+    "description": "Use Effect"
+  },
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+  // Placeholders with the same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"scope": "javascript,typescript",
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+}

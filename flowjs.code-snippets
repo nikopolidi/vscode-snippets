@@ -1,0 +1,75 @@
+{
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+  // Placeholders with the same ids are connected.
+  // Example:
+  "Declare Type Alias": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,jsx",
+    "prefix": "@t",
+    "body": [
+      "type $1 = {",
+      "\t$2",
+      "};"
+    ],
+    "description": "Declare Type"
+  },
+  "string type": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,jsx",
+    "prefix": "@s",
+    "body": [
+      "string"
+    ],
+    "description": "string type shorthand"
+  },
+  "boolean type": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,jsx",
+    "prefix": "@b",
+    "body": [
+      "boolean"
+    ],
+    "description": "boolean type shorthand"
+  },
+  "number type": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,jsx",
+    "prefix": "@n",
+    "body": [
+      "number"
+    ],
+    "description": "number type shorthand"
+  },
+  "Array type": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,jsx",
+    "prefix": "@A",
+    "body": [
+      "Array<$1>"
+    ],
+    "description": "Array type shorthand"
+  },
+  "any type": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,jsx",
+    "prefix": "@a",
+    "body": [
+      "any"
+    ],
+    "description": "any type shorthand"
+  },
+  "Object type": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,jsx",
+    "prefix": "@o",
+    "body": [
+      "Object"
+    ],
+    "description": "Object type shorthand"
+  },
+  "Function type": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,jsx",
+    "prefix": "@f",
+    "body": [
+      "Function"
+    ],
+    "description": "Function type shorthand"
+  }
+}

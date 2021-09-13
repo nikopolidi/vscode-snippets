@@ -1,0 +1,10 @@
+{
+  "Import Material-UI component":{
+    "scope":"javascript,typescript,javascriptreact,jsx",
+    "prefix":"mui",
+    "body": [
+			"import $1 from '@material-ui/core/$1'",
+		],
+		"description": "import materia-ui component"
+  }
+}
